@@ -3,7 +3,7 @@
 function createGroceries(): string[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return ["bread", "milk", "eggs", "apples", "rice", "coffee"]; // replace empty array with what you see is fit
 }
 
 // Step 2:
@@ -11,7 +11,7 @@ function createGroceries(): string[] {
 function getSecondGroceryItem(groceries: string[]): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+  return groceries[1]; // replace empty string with what you see is fit
 }
 
 // Step 3:
@@ -19,7 +19,7 @@ function getSecondGroceryItem(groceries: string[]): string {
 function getGroceriesCount(groceries: string[]): number {
   // write your code here...
 
-  return 0; // replace zero with what you see is fit
+  return groceries.length; // replace zero with what you see is fit
 }
 
 // Step 4:
@@ -27,7 +27,7 @@ function getGroceriesCount(groceries: string[]): number {
 function getLastGroceryItem(groceries: string[]): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+  return groceries[groceries.length - 1]; // replace empty string with what you see is fit
 }
 
 // Step 5:
@@ -35,7 +35,7 @@ function getLastGroceryItem(groceries: string[]): string {
 function removeLastGroceryItem(groceries: string[]): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+  return groceries.pop() || ""; // replace empty string with what you see is fit
 }
 
 // Step 6:
@@ -47,8 +47,8 @@ function addNewGroceries(
   itemTwo: string
 ): string[] {
   // write your code here...
-
-  return []; // replace empty array with what you see is fit
+  groceries.push(itemOne, itemTwo);
+  return groceries; // replace empty array with what you see is fit
 }
 
 // Step 7:
@@ -56,7 +56,7 @@ function addNewGroceries(
 function getFirstThreeGroceryItems(groceries: string[]): string[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return groceries.slice(0, 3); // replace empty array with what you see is fit
 }
 
 export {
